@@ -13,3 +13,10 @@ st.write(lista_numeros)
 
 
 modulos = st.sidebar.selectbox ("Seleccione un módulo", ["Módulo Listas","Módulo Funciones"])
+
+if modulos == "Módulos Listas":
+  st.write("Bienvenido al módulo Listas")
+elif modulos == "Módulo Arreglos":
+  st.write("Bienvenido al módulo Arreglos")
+else:
+  st.write("Bienvenido al módulo Funciones")
