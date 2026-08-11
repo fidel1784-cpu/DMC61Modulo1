@@ -1,17 +1,23 @@
 import streamlit as st
+
 st.title("Especialización Python for Analytics")
 st.sidebar.title("Parámetros")
 st.write("Elaborado por: Carlos Carrillo")
 
-st.image("Python_logo.png", width = 50)
+st.image("Python_logo.png", width=300)
+st.sidebar.image("DMC.png", width=100)
 
+modulos = st.sidebar.selectbox(
+    "Seleccione un módulo",
+    ["Módulo Listas", "Módulo Arreglos", "Módulo Funciones"]
+)
 
+if modulos == "Módulo Listas":
 
+    st.write("Bienvenido al módulo Listas")
 
-
-
-
-modulos = st.sidebar.selectbox ("Selecione un módulo", ["Módulo Listas", "Módulo Arreglos", "Módulo Funciones"])
+    valor_inicial = st.number_input("Ingrese el valor inicial")
+    valor_final = st.number_input("Ingrese el valor final")
 
 if modulos == "Módulo Listas":
   st.write("Bienvenido al módulo Listas")
